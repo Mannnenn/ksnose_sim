@@ -11,6 +11,7 @@ ament_auto_find_build_dependencies()
 
 
 
+ament_auto_add_library(nokolat2024_sim src/airplane_eom.cpp include/nokolat2024_sim/airplane_eom.hpp)
 
 ament_auto_add_executable(airplane_eom src/airplane_eom.cpp)
 
