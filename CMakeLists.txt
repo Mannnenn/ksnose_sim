@@ -9,11 +9,15 @@ endif()
 find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
+find_package(Eigen3 REQUIRED)
+include_directories(${EIGEN3_INCLUDE_DIR})
 
+#ament_auto_add_library(nokolat2024_sim src/airplane_eom.cpp include/nokolat2024_sim/airplane_eom.hpp)
+#ament_auto_add_executable(airplane_eom src/airplane_eom.cpp)
 
-ament_auto_add_library(nokolat2024_sim src/airplane_eom.cpp include/nokolat2024_sim/airplane_eom.hpp)
+# Add executable
+ament_auto_add_executable(airplane_EoM src/airplane_EoM.cpp)
 
-ament_auto_add_executable(airplane_eom src/airplane_eom.cpp)
 
 
 
