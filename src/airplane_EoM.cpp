@@ -21,49 +21,48 @@ namespace Param
 {
     // 基本定数
     constexpr double g = 9.81;
-    constexpr double U0 = 293.8;
+    constexpr double U0 = 4.0;
     constexpr double W0 = 0;
     constexpr double theta0 = 0.0;
 
-    // 縦の安定微係数: ロッキードP2V-7
-    constexpr double Xu = -0.0215;
-    constexpr double Zu = -0.227;
-    constexpr double Mu = 0;
+    // 縦の安定微係数: From ChatGPT
+    constexpr double Xu = -0.06;
+    constexpr double Zu = -0.5;
+    constexpr double Mu = -0.025;
 
-    constexpr double Xa = 14.7;
-    constexpr double Za = -236;
-    constexpr double Ma = -3.78;
-    constexpr double Madot = -0.28;
+    constexpr double Xa = -0.75;
+    constexpr double Za = -3.5;
+    constexpr double Ma = -1.5;
+    constexpr double Madot = -2.0;
 
     constexpr double Xq = 0;
-    constexpr double Zq = -5.76;
-    constexpr double Mq = -0.992;
+    constexpr double Zq = -3.5;
+    constexpr double Mq = -3.5;
 
-    constexpr double X_deltat = 0;
-    constexpr double Z_deltae = -12.9;
-    constexpr double Z_deltat = 0;
-    constexpr double M_deltae = -2.48;
+    constexpr double X_deltat = 0.75;
+    constexpr double Z_deltae = -2.0;
+    constexpr double Z_deltat = 0.0;
+    constexpr double M_deltae = -3.5;
     constexpr double M_deltat = 0;
 
-    // 横の安定微係数: ロッキードP2V-7
-    constexpr double Yb = -45.4;
-    constexpr double Lb = -1.71;
-    constexpr double Nb = 0.986;
+    constexpr double Yb = -1.25;
+    constexpr double Lb = -0.6;
+    constexpr double Nb = 0.25;
 
-    constexpr double Yp = 0.716;
-    constexpr double Lp = -0.962;
-    constexpr double Np = -0.0632;
+    constexpr double Yp = 0.0;
+    constexpr double Lp = -1.0;
+    constexpr double Np = 0.15;
 
-    constexpr double Yr = 2.66;
-    constexpr double Lr = 0.271;
-    constexpr double Nr = -0.215;
+    constexpr double Yr = 0.6;
+    constexpr double Lr = 0.25;
+    constexpr double Nr = -1.0;
 
-    constexpr double L_deltaa = 1.72;
-    constexpr double N_deltaa = -0.0436;
+    constexpr double L_deltaa = 2.0;
+    constexpr double N_deltaa = 0.15;
 
-    constexpr double Y_deltar = 9.17;
-    constexpr double L_deltar = 0.244;
-    constexpr double N_deltar = -0.666;
+    constexpr double Y_deltar = 1.5;
+    constexpr double L_deltar = -1.0;
+    constexpr double N_deltar = -2.0;
 } // namespace Param
 
 // 回転行列 R = Rz(psi)*Ry(theta)*Rx(phi)
